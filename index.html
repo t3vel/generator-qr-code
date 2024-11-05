@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate QR-codes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="app">
+            <h1>Generate QR-code</h1>
+            <p>Paste URL-adress or text to create QR-code</p>
+            <form class="form">
+                <input type="text" class="input-form" placeholder="Paste here">
+                <div class="btn-wrap">
+                    <button class="btn-form">Generate QR-code</button>
+                </div>
+            </form>
+            <div class="qr__code">
+                <img src="" alt="QR-code">
+            </div>
+
+            <div class="download">
+                <button class="download-qr__button" onclick="downloadQRCode('png')">
+                    <img class="download-img" src="images/load.svg" alt="Download PNG">
+                    <span>PNG</span>
+                </button>
+                <button class="download-qr__button" onclick="downloadQRCode('jpg')">
+                    <img class="download-img" src="images/load.svg" alt="Download JPG">
+                    <span>JPG</span>
+                </button>
+                <button class="download-qr__button" onclick="downloadQRCode('svg')">
+                    <img class="download-img" src="images/load.svg" alt="Download SVG">
+                    <span>SVG</span>
+                </button>
+            </div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>
