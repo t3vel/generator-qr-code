@@ -152,13 +152,18 @@ span{
 
 
 @media (max-width: 768px) { 
+    
     .app{
         height: 100vh;
+        border: none;
+        font-size: 1.3rem;
     }
 
     .input-form{
        max-width: 100%;
     }
+
+
 }
 
 
